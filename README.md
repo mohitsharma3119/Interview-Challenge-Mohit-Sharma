@@ -10,4 +10,4 @@
 
 ## I have implemented all the required functionalities with best of my abilities any feedback is appreaciated.
 
-# Thanks for this opportubity
+# Thanks for this opportunity
