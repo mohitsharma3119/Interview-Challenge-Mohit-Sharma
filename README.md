@@ -1,6 +1,6 @@
 # Interview-Challenge-Mohit-Sharma
 
-### Implemented requested functionalities, other CRUD operations (delete and update not fully implemented or tested) 
+#### Implemented requested functionalities, other CRUD operations (delete and update not fully implemented or tested) 
 ### Used UTF7 encoding (obsolete) while reading csv to ensure names with special characters are read properly.  
 ### UTF8 was unable to read special characters, different encoding scheme could be implemented with more research.
 
