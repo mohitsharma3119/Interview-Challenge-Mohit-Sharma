@@ -8,6 +8,8 @@
 
 ## Basic frontend created (Not created separate components to handle errors basic messages implemented)
 
+# After uploading csv it redirects to the screen to display data.
+
 ## I have implemented all the required functionalities with best of my abilities any feedback is appreaciated.
 
 # Thanks for this opportunity
