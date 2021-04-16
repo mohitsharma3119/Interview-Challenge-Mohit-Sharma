@@ -9,6 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import axios from 'axios';
 import dateFormat from 'dateformat';
+import CurrencyFormat from 'react-currency-format';
 
 const useStyles = makeStyles({
     table: {
@@ -49,7 +50,13 @@ export default function Dealership() {
                             <TableCell align="center">{row.customerName}</TableCell>
                             <TableCell align="center">{row.dealershipName}</TableCell>
                             <TableCell align="center">{row.vehicle}</TableCell>
-                            <TableCell align="right">CAD$ {row.price}</TableCell>
+                            <TableCell align="right">
+                                <CurrencyFormat 
+                                    value={row.price}
+                                     displayType={'text'}
+                                     thousandSeparator={true} 
+                                     prefix={'CAD$ '} />                                
+                            </TableCell>
                             <TableCell align="right"> {dateFormat(row.date, "mmmm dS, yyyy")}</TableCell>
                         </TableRow>
                     ))}
