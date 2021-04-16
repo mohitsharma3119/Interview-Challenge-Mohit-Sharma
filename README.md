@@ -6,7 +6,7 @@
 
 ### Screenshots of output attached in documentation
 
-### Basic frontend created (Not created separate components to handle errors basic messages implemented)
+### Basic frontend created (Not created separate components to handle errors, basic messages implemented)
 
 ### After uploading csv it redirects to the screen to display data.
 
