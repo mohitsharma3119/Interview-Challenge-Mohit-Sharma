@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cox_Interview_Challenge_Mohit_Sharma", "Cox_Interview_Challenge_Mohit_Sharma\Cox_Interview_Challenge_Mohit_Sharma.csproj", "{37B64521-B110-4500-9D21-352968164CCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cox_Interview_Challenge_Mohit_Sharma", "Cox_Interview_Challenge_Mohit_Sharma\Cox_Interview_Challenge_Mohit_Sharma.csproj", "{37B64521-B110-4500-9D21-352968164CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealershipTest", "DealershipTest\DealershipTest.csproj", "{CFEDA437-D931-4435-A0E5-68D876A1E803}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{37B64521-B110-4500-9D21-352968164CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B64521-B110-4500-9D21-352968164CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B64521-B110-4500-9D21-352968164CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFEDA437-D931-4435-A0E5-68D876A1E803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFEDA437-D931-4435-A0E5-68D876A1E803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFEDA437-D931-4435-A0E5-68D876A1E803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFEDA437-D931-4435-A0E5-68D876A1E803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

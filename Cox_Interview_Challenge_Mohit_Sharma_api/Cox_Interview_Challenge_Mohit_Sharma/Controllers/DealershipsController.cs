@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Cox_Interview_Challenge_Mohit_Sharma.Models;
-using Cox_Interview_Challenge_Mohit_Sharma.Domain;
-using System.Text.Json;
-using Microsoft.AspNetCore.Http;
-using System.Collections;
-using Newtonsoft.Json;
+using Cox_Interview_Challenge_Mohit_Sharma.Interfaces;
+using System.Linq;
+using Cox_Interview_Challenge_Mohit_Sharma.Mappers;
 
 namespace Cox_Interview_Challenge_Mohit_Sharma.Controllers
 {
@@ -19,10 +14,22 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.Controllers
     {
         private readonly ICsvService _csvService;
         private readonly IDealershipRepository _dealershipRepository;
+
+        //public DealershipsController(IDealershipRepository dealershipRepository)
+        //{
+        //    _dealershipRepository = dealershipRepository;
+        //}
         public DealershipsController(ICsvService csvService, IDealershipRepository dealershipRepository)
         {
             _csvService = csvService;
             _dealershipRepository = dealershipRepository;
+        }
+
+        [HttpGet]
+        public async Task<Dealerships> GetDealershipDetailsByDealNumber(int dealNumber)
+        {
+            var result = await _dealershipRepository.GetDealershipDetails(dealNumber);
+            return result;
         }
 
         // GET: Dealerships
@@ -43,35 +50,17 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetMostSoldVehicle()
+        public IActionResult GetMostSoldVehicle()
         {
             try
             {
-                var mostSold =  _dealershipRepository.GetByMostSoldVehicleAsync();
+                MostSoldVehicle mostSold = new();
+                mostSold =  _dealershipRepository.GetByMostSoldVehicleAsync();
                 return StatusCode(200, mostSold);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex);
-            }
-
-        }
-
-        //// GET: Dealerships/Details/5
-        public async Task<IActionResult> GetDealerships(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            try
-            {
-                //call repository to get by deal number/id
-                return StatusCode(200, "");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
             }
 
         }

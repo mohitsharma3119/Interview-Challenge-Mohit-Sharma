@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cox_Interview_Challenge_Mohit_Sharma.Domain
+namespace Cox_Interview_Challenge_Mohit_Sharma.Interfaces
 {
     public interface ICsvService
     {

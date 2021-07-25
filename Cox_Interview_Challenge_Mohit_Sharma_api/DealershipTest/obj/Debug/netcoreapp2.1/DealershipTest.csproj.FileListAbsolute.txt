@@ -1,0 +1,4 @@
+D:\MHIRJ\interview-challenge\Interview-Challenge-Mohit-Sharma\Cox_Interview_Challenge_Mohit_Sharma_api\DealershipTest\obj\Debug\netcoreapp2.1\DealershipTest.csproj.AssemblyReference.cache
+D:\MHIRJ\interview-challenge\Interview-Challenge-Mohit-Sharma\Cox_Interview_Challenge_Mohit_Sharma_api\DealershipTest\obj\Debug\netcoreapp2.1\DealershipTest.AssemblyInfoInputs.cache
+D:\MHIRJ\interview-challenge\Interview-Challenge-Mohit-Sharma\Cox_Interview_Challenge_Mohit_Sharma_api\DealershipTest\obj\Debug\netcoreapp2.1\DealershipTest.AssemblyInfo.cs
+D:\MHIRJ\interview-challenge\Interview-Challenge-Mohit-Sharma\Cox_Interview_Challenge_Mohit_Sharma_api\DealershipTest\obj\Debug\netcoreapp2.1\DealershipTest.csproj.CoreCompileInputs.cache

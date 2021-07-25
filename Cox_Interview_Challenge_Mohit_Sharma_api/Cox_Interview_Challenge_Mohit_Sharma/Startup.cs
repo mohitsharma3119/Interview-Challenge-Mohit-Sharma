@@ -1,5 +1,5 @@
 using Cox_Interview_Challenge_Mohit_Sharma.DAL;
-using Cox_Interview_Challenge_Mohit_Sharma.Domain;
+using Cox_Interview_Challenge_Mohit_Sharma.Interfaces;
 using Cox_Interview_Challenge_Mohit_Sharma.Models;
 using Cox_Interview_Challenge_Mohit_Sharma.Services;
 using Microsoft.AspNetCore.Builder;

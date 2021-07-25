@@ -25,8 +25,8 @@ export default function MostSoldVehicle() {
     useEffect(() => {
         axios.get('https://localhost:44363/api/Dealerships/GetMostSoldVehicle').then((response) => {
             console.log(response.data);
-            setvehicles(response.data.vehicle);
-            setCount(response.data.count);
+            setvehicles(response.data.vehicleName);
+            setCount(response.data.soldCount);
         });
     }, []);
 

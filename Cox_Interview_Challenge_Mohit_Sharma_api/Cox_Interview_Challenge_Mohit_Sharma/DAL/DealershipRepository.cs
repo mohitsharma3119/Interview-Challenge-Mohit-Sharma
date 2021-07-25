@@ -1,4 +1,5 @@
-﻿using Cox_Interview_Challenge_Mohit_Sharma.Domain;
+﻿using Cox_Interview_Challenge_Mohit_Sharma.Interfaces;
+using Cox_Interview_Challenge_Mohit_Sharma.Mappers;
 using Cox_Interview_Challenge_Mohit_Sharma.Models;
 using EFCore.BulkExtensions;
 using Microsoft.EntityFrameworkCore;
@@ -16,11 +17,6 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.DAL
         public DealershipRepository(DealershipContext context)
         {
             _context = context;
-        }
-
-        public void Dispose()
-        {
-            _context.Dispose();
         }
         public async Task<bool> CreateDealershipAsync(Dealerships newDealership)
         {
@@ -69,19 +65,25 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.DAL
             return await _context.Dealerships.ToListAsync();
         }
 
-        public dynamic GetByMostSoldVehicleAsync()
+        public async Task<Dealerships> GetDealershipDetails(int dealNumber)
+        {
+            var dealership = await _context.Dealerships.FirstOrDefaultAsync(c => c.Id == dealNumber);
+            return dealership;
+        }
+
+        public MostSoldVehicle GetByMostSoldVehicleAsync()
         {
             try
             {
-                var dealership = (from dlr in _context.Dealerships
+                var mostSoldVehicle = (from dlr in _context.Dealerships
                                   group dlr by dlr.Vehicle into g
                                   orderby g.Count() descending
-                                  select new
+                                  select new MostSoldVehicle()
                                   {
-                                      Vehicle = g.Key,
-                                      count = g.Count()
+                                      VehicleName = g.Key,
+                                      SoldCount = g.Count()
                                   });
-                return dealership.ToList().FirstOrDefault();
+                return mostSoldVehicle.ToList().FirstOrDefault();
             }
             catch (Exception)
             {
