@@ -10,6 +10,7 @@ using Cox_Interview_Challenge_Mohit_Sharma.Domain;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using System.Collections;
+using Newtonsoft.Json;
 
 namespace Cox_Interview_Challenge_Mohit_Sharma.Controllers
 {
@@ -46,12 +47,12 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.Controllers
         {
             try
             {
-                dynamic mostSold =  _dealershipRepository.GetByMostSoldVehicleAsync();
+                var mostSold =  _dealershipRepository.GetByMostSoldVehicleAsync();
                 return StatusCode(200, mostSold);
             }
             catch (Exception ex)
             {
-                return  StatusCode(500, ex); ;
+                return StatusCode(500, ex);
             }
 
         }

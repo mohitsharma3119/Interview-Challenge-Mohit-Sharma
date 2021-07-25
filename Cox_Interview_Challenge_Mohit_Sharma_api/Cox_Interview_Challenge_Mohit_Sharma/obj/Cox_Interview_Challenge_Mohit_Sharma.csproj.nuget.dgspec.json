@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\NET\\Cox_Interview\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj": {}
+    "D:\\MHIRJ\\interview-challenge\\Interview-Challenge-Mohit-Sharma\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj": {}
   },
   "projects": {
-    "G:\\NET\\Cox_Interview\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj": {
+    "D:\\MHIRJ\\interview-challenge\\Interview-Challenge-Mohit-Sharma\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\NET\\Cox_Interview\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj",
+        "projectUniqueName": "D:\\MHIRJ\\interview-challenge\\Interview-Challenge-Mohit-Sharma\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj",
         "projectName": "Cox_Interview_Challenge_Mohit_Sharma",
-        "projectPath": "G:\\NET\\Cox_Interview\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj",
-        "packagesPath": "C:\\Users\\MS\\.nuget\\packages\\",
-        "outputPath": "G:\\NET\\Cox_Interview\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\obj\\",
+        "projectPath": "D:\\MHIRJ\\interview-challenge\\Interview-Challenge-Mohit-Sharma\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\Cox_Interview_Challenge_Mohit_Sharma.csproj",
+        "packagesPath": "C:\\Users\\MSHARMA3\\.nuget\\packages\\",
+        "outputPath": "D:\\MHIRJ\\interview-challenge\\Interview-Challenge-Mohit-Sharma\\Cox_Interview_Challenge_Mohit_Sharma_api\\Cox_Interview_Challenge_Mohit_Sharma\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSHARMA3\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

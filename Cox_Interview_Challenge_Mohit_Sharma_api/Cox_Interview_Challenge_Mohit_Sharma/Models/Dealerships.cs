@@ -16,10 +16,6 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.Models
         public string DealershipName { get; set; }
         public string Vehicle { get; set; }
         public decimal Price { get; set; }
-
-       
-         [DataType(DataType.Date)]
-        [JsonConverter(typeof(JsonDateConverter))]
-        public DateTime Date { get; set; }
+        public DateTime? Date { get; set; }
     }
 }

@@ -37,7 +37,7 @@ class Header extends Component {
                 <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
                     <Toolbar className={classes.toolbar}>
                         <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-                            Cox Interview Challenge Mohit Sharma
+                            SE Coding Challenge Mohit Sharma
                     </Typography>
                         <nav>
                             <NavLink variant="button" color="textPrimary" to='/' className={classes.link}>

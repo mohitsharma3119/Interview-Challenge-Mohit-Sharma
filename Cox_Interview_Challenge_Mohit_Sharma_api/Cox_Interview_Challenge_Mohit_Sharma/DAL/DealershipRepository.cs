@@ -70,16 +70,23 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.DAL
         }
 
         public dynamic GetByMostSoldVehicleAsync()
-        {          
-            var dealership =  (from dlr in _context.Dealerships
-                             group dlr by dlr.Vehicle into g
-                             orderby g.Count() descending
-                             select new 
-                             {
-                                Vehicle = g.Key,
-                                count = g.Count()
-                             });           
-            return dealership.ToList().FirstOrDefault();
+        {
+            try
+            {
+                var dealership = (from dlr in _context.Dealerships
+                                  group dlr by dlr.Vehicle into g
+                                  orderby g.Count() descending
+                                  select new
+                                  {
+                                      Vehicle = g.Key,
+                                      count = g.Count()
+                                  });
+                return dealership.ToList().FirstOrDefault();
+            }
+            catch (Exception)
+            {
+                throw;
+            }            
         }
     }
 }
