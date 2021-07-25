@@ -15,10 +15,6 @@ namespace Cox_Interview_Challenge_Mohit_Sharma.Controllers
         private readonly ICsvService _csvService;
         private readonly IDealershipRepository _dealershipRepository;
 
-        //public DealershipsController(IDealershipRepository dealershipRepository)
-        //{
-        //    _dealershipRepository = dealershipRepository;
-        //}
         public DealershipsController(ICsvService csvService, IDealershipRepository dealershipRepository)
         {
             _csvService = csvService;

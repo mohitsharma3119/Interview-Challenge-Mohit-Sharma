@@ -10,7 +10,8 @@ namespace DealershipTest
     public class DealershipTest 
     {
         #region Property  
-        public Mock<IDealershipRepository> mockDealership = new Mock<IDealershipRepository>();
+        public Mock<IDealershipRepository> mockDealership = new();
+        public Mock<ICsvService> mockCsvService = new();
         #endregion       
 
         [Fact]
@@ -25,10 +26,10 @@ namespace DealershipTest
                 Price = 350987,
                 Date = DateTime.Now.Date
             };
-            //mockDealership.Setup(p => p.GetDealershipDetails(4589)).ReturnsAsync(dealerships);
-            //DealershipsController dealership = new DealershipsController(mockDealership.Object);
-            //var result = await dealership.GetDealershipDetailsByDealNumber(4589);
-            //Assert.True(dealerships.Equals(result));
+            mockDealership.Setup(p => p.GetDealershipDetails(4589)).ReturnsAsync(dealerships);
+            DealershipsController dealership = new DealershipsController(mockCsvService.Object, mockDealership.Object);
+            var result = await dealership.GetDealershipDetailsByDealNumber(4589);
+            Assert.True(dealerships.Equals(result));
         }
     }
 }
